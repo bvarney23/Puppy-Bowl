@@ -32,9 +32,9 @@ return (
                 console.log("Puppies", indivPuppies)
                 return <div key={idx}>
                     <div id="puppy-information">
+                        <p id="puppy-name">Puppy Name: {indivPuppies.name}</p>
                         <img src={indivPuppies.imageUrl}></img>
-                        <p>Puppy Name: {indivPuppies.name}</p>
-                        <p>Breed: {indivPuppies.breed}</p>
+                        <p id="puppy-breed">Breed: {indivPuppies.breed}</p>
                     </div>
                 </div>
             }) : <div>Puppy server is down, please try later.</div>

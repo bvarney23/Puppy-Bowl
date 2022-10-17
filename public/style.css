@@ -12,8 +12,13 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     gap: 50px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
-#puppy-information {
-    border: 2px solid red;;
+#puppy-name {
+    font-size: 24px;
+    text-align: center;
+}
+#puppy-breed {
+    font-size: 20px;
+    text-align: center;
 }
