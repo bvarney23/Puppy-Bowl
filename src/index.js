@@ -24,16 +24,18 @@ const Puppies = () => {
 
 return (
     <div>
-        <h2>Hello Puppies!</h2>
+        <h1>Hello Puppies!</h1>
 
         <div id="puppy-container">
         {
             puppies && puppies.length ? puppies.map((indivPuppies, idx) => {
                 console.log("Puppies", indivPuppies)
                 return <div key={idx}>
-                    <img src={indivPuppies.imageUrl}></img>
-                    <p>Puppy Name: {indivPuppies.name}</p>
-                    <p>Puppy Breed: {indivPuppies.breed}</p>
+                    <div id="puppy-information">
+                        <img src={indivPuppies.imageUrl}></img>
+                        <p>Puppy Name: {indivPuppies.name}</p>
+                        <p>Breed: {indivPuppies.breed}</p>
+                    </div>
                 </div>
             }) : <div>Puppy server is down, please try later.</div>
         }
