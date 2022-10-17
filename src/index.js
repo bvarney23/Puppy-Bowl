@@ -25,6 +25,7 @@ const Puppies = () => {
 return (
     <div>
         <h1>Hello Puppies!</h1>
+        <p>Welcome to the 2022 Puppy Bowl! Down below you will see a list of our contestants for this years matchup. This years field is filled with a diverse group of competitors that are looking to take home the big prize! Let's get this pawty started!</p>
 
         <div id="puppy-container">
         {
